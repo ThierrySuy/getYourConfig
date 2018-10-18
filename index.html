@@ -38,8 +38,33 @@
             <button class="btn btn-default filter-button" data-filter="3">Project 3</button>
             <button class="btn btn-default filter-button" data-filter="4">Project 4</button></br>
             <button id="myadd" class="btn btn-primary add-config">Add Config</button>
-            <button id="mydelete" class="btn btn-danger delete-config">Delete Config</button>
+            <!-- Button trigger modal -->
+            <button id="mydelete" class="btn btn-danger delete-config" data-toggle="modal" data-target="#deleteModal">Delete Config</button>
         </div>
+
+        <!-- Modal -->
+            <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Modal de suppression</h5>
+                    </div>
+                    <div class="modal-body">
+                        Êtes-vous sûr de vouloir supprimer cette configuration ?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
+                        <button onclick="deletePicture()" data-dismiss="modal" type="button" class="btn btn-primary">Oui</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <script>
+                function deletePicture() {
+                    $( "img" ).last().remove();
+                }
+            </script>
 
         <div id="newcase"> 
         </div>

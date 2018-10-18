@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $( "#mydelete" ).click(function() {
-        $( "img" ).last().remove();
-      });
+  function deletePicture() {
+    $( "img" ).last().remove();
+}
     });
