@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Style Sheets-->
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> 
 <link href="css/style.css" rel="stylesheet" id="bs-perso">
 <!-- Jquery & AJAX-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -22,6 +23,7 @@
 <script src="js/addPicture.js"></script>
 <script src="js/deletePicture.js"></script>
 <script src="js/flipCard.js"></script>
+<!-- <script src="js/showButton.js"></script> -->
 </head>
 
 <body>
@@ -40,7 +42,7 @@
             <button id="myadd" class="btn btn-primary add-config">Add Config</button>
             <!-- Button trigger modal -->
             <button id="mydelete" class="btn btn-danger delete-config" data-toggle="modal" data-target="#deleteModal">Delete Config</button>
-        </div>
+            </div>
 
         <!-- Modal -->
             <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
@@ -74,6 +76,6 @@
 
 </body>
 <?php
-require('./footer.html');
+require('./footer.php');
 ?>
 </html>

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
   function deletePicture() {
-    $( "img" ).last().remove();
-}
+    $( ".image-checkbox-checked" ).remove();
+  }
     });
