@@ -21,7 +21,6 @@
 <script src="js/popper.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/addPicture.js"></script>
-<script src="js/deletePicture.js"></script>
 <script src="js/flipCard.js"></script>
 <!-- <script src="js/showButton.js"></script> -->
 </head>
@@ -39,12 +38,35 @@
             <button class="btn btn-default filter-button" data-filter="2">Project 2</button>
             <button class="btn btn-default filter-button" data-filter="3">Project 3</button>
             <button class="btn btn-default filter-button" data-filter="4">Project 4</button></br>
-            <button id="myadd" class="btn btn-primary add-config">Add Config</button>
+            <!-- Button trigger modal -->
+            <button id="myadd" class="btn btn-primary add-config" data-toggle="modal" data-target="#createModal">Add Config</button>
             <!-- Button trigger modal -->
             <button id="mydelete" class="btn btn-danger delete-config" data-toggle="modal" data-target="#deleteModal">Delete Config</button>
             </div>
 
-        <!-- Modal -->
+        <!-- Modal Create -->
+        <!-- <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Modal de création</h5>
+                    </div>
+                    <div class="modal-body">
+                        Êtes-vous sûr de vouloir créer une configuration ?</br>
+                        <form action="/action_page.php">Project Number..: 
+                        <input type="text" name="projectnb" required>
+                        <input type="submit">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
+                        <button onclick="addConfig()" data-dismiss="modal" type="button" class="btn btn-primary">Oui</button>
+                    </div>
+                </div>
+                </div>
+            </div> -->
+
+        <!-- Modal Delete -->
             <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -63,9 +85,9 @@
             </div>
 
             <script>
-                function deletePicture() {
-                    $( "img" ).last().remove();
-                }
+                    function deletePicture() {
+                        $( "img" ).last().remove();
+                    }
             </script>
 
         <div id="newcase"> 

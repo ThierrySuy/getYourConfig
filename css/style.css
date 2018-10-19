@@ -4,6 +4,22 @@ img {
     border: 1px ridge rgb(126, 4, 4);
 }
 
+.filter-1{
+    background-color: #970000;
+}
+
+.filter-2{
+    background-color: #4783B0;
+}
+
+.filter-3{
+    background-color: #42B32F;
+}
+
+.filter-4{
+    background-color: peru;
+}
+
 .gallery-title
 {
     font-size: 36px;
