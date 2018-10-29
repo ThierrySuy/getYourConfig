@@ -1,5 +1,26 @@
-
 /********************************* GALLERY **********************************/
+#logo {
+    margin-right: 70%;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 200px;
+}
+
+#mydelete {
+    
+}
+
+fieldset {
+    border: 0;
+  }
+  label {
+    display: block;
+    margin: 30px 0 0 0;
+  }
+  .overflow {
+    height: 200px;
+  }
+
 img {
     border: 1px ridge rgb(126, 4, 4);
 }
@@ -20,13 +41,48 @@ img {
     background-color: peru;
 }
 
+.dropdown-toggle {
+    background-color: #970000;
+    border-color: white;
+    color: white;
+}
+
+.btn btn-secondary {
+    background-color: #970000;
+    border-color: white;
+    color: white;
+}
+
+#version {
+    margin-right: 90px;
+}
+
+hr.header {
+    border-top: 3px double #8c8b8b;
+    margin-bottom: 100px;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+hr.footer {
+    border-top: 3px double #8c8b8b;
+    margin-top: 100px;
+}
+
+#footer-copyright {
+    text-align: center;
+}
+
 .gallery-title
 {
     font-size: 36px;
     color: #970000;
-    text-align: center;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -35,7 +91,7 @@ img {
     font-size: 18px;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
-    text-align: center;
+    text-align: right;
     color: rgb(0, 0, 0);
     margin-bottom: 30px;
 }
@@ -45,7 +101,7 @@ img {
     font-size: 18px;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
-    text-align: center;
+    text-align: right;
     color: rgb(0, 0, 0);
     margin-bottom: 30px;
 }
@@ -57,7 +113,7 @@ img {
     border-radius: 5px;
     text-align: center;
     color: rgb(0, 0, 0);
-    margin-bottom: 30px;
+    margin-top: 10px;
 }
 .filter-button:hover
 {
@@ -82,7 +138,13 @@ img {
 
 .gallery_product
 {
-    margin-bottom: 30px;
+    width : 270px;
+    height:300px;
+    margin: 10px;
+}
+
+.newcase {
+    text-align: center;
 }
 /******************************** CHECKBOX ON IMAGE **********************************/
 
@@ -152,3 +214,16 @@ img {
     text-align: center;
     transform: rotateY(180deg);
   }
+
+  /**** FOOTER ****/
+
+  .footer-copyright {
+      text-align: left;
+  }
+
+
+  .remove{
+      border-color:red;
+  }
+
+

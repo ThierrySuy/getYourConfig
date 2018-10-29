@@ -19,4 +19,38 @@ $(document).ready(function() {
         $(this).removeClass("active");
     }
         $(this).addClass("active");
+
+    //DISABLED/ENABLED State//
+
+        $('.status').change(function(){
+            if ($('#tester').val() != "" && $('#project').val() != "")
+            {
+                $('#version').attr('disabled', false);
+                
+                if ($('#version').val() != "") {
+                    $('#gobutton').attr('disabled', false);
+                    $('#mycreate').attr('disabled', false);
+                    $('#mydelete').attr('disabled', false);
+                }
+                else {
+                    $('#gobutton').attr('disabled', true);
+                }
+            }
+            else {
+                $('#version').attr('disabled', true);
+                $('#gobutton').attr('disabled', true);
+            }
+        })
+
+    // DISABLED WELCOME P //
+
+            $("#gobutton").click(function () {
+                $("p").hide("slow");
+                $("#newcase").show("slow");
+        });
+
+        
+           
+                    
+
 });
