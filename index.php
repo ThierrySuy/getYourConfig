@@ -4,13 +4,14 @@
   <title>Get Config Projects</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" >
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/addPicture.js"></script>
 </head>
@@ -27,8 +28,7 @@
                 <option value="Thierry SUY">Thierry SUY</option>
                 <option value="Antoine LE">Antoine LE</option>
             </select>
-
-        
+ 
             <select name="project" id="project" class="status">
             <option value="">Choisir le projet...</option>
                 <option value="Conforama">Conforama</option>
@@ -40,6 +40,7 @@
                 <option value="v2.0">v2.0</option>
                 <option value="v3.0">v3.0</option>
             </select>
+			
 
 			<button id="gobutton" type="button" disabled>Go!</button>
 
@@ -100,19 +101,23 @@
                 </div>
             </div>
 
+			
+
             <script>
                     function deletePicture() {
                         $( "img" ).last().remove();
                     }
-            </script>
+			</script>
 
         
 
         <!-- <button hidden id="allcard" class="btn btn-default filter-button" data-filter="all">Voir toutes les cartes</button> -->
     </div>
 </div>
+
 </body>
 <?php
 require 'footer.php';
 ?>
+
 </html>

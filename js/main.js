@@ -45,12 +45,41 @@ $(document).ready(function() {
     // DISABLED WELCOME P //
 
             $("#gobutton").click(function () {
-                $("p").hide("slow");
-                $("#newcase").show("slow");
+                $("p#welcome").hide("slow");
         });
 
-        
-           
-                    
+    // FLIPPING CARD //
 
+            var $cards = $('.card-object'),
+                $faceButtons = $('.face');
+
+            $faceButtons.on('click', flipCard);
+
+            function flipCard(event) {
+                event.preventDefault();
+
+                var $btnFace = $(this),
+                    $card = $btnFace.parent('.card-object');
+
+                if ($card.hasClass('flip-in')) {
+                    closeCards();
+                } else {
+                    closeCards();
+                    openCard($card);
+                }
+
+            }
+
+            function closeCards() {
+                $cards
+                    .filter('.flip-in')
+                    .removeClass('flip-in')
+                    .addClass('flip-out');
+            }
+
+            function openCard($card) {
+                $card
+                    .removeClass('flip-out')
+                    .addClass('flip-in');
+            }
 });
