@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/ajaxGet.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/addPicture.js"></script>
+  
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  
+  <script src="js/main.js"></script>
+  <script src="js/addPicture.js"></script>
 </head>
 
 <body>
@@ -28,24 +28,17 @@
 
             <select name="tester" id="tester" class="status">
                 <option value="">Choisir le testeur...</option>
-                <option value="Thierry SUY">Thierry SUY</option>
-                <option value="Antoine LE">Antoine LE</option>
             </select>
  
             <select name="project" id="project" class="status">
             <option value="">Choisir le projet...</option>
-                <option value="Conforama">Conforama</option>
-                <option value="Saint Gobain">Saint Gobain</option>
             </select>
 
             <select name="version" id="version" class="status" disabled>
             <option value="">Choisir la version...</option>
-                <option value="v2.0">v2.0</option>
-                <option value="v3.0">v3.0</option>
             </select>
-			
 
-			<button id="gobutton" type="button" disabled>Go!</button>
+			</br></br><button id="gobutton" type="button" disabled>Go!</button>
 
             <button id="myadd" type="button" data-toogle="modal" data-target="#createModal" disabled>Créer une configuration</button>
 
@@ -106,9 +99,7 @@
 
             <script>
                     function deletePicture() {
-					/* if ($('.gallery_product').val() == "") {
-								$('p#welcome').show('slow');
-							}*/
+						//$('p#welcome').show('slow');
                         $( ".flip-card" ).last().remove();
                     }
 
@@ -119,6 +110,7 @@
 
 <script src="js/WS/getTestersList.js"></script>
 <script src="js/WS/getProjectsList.js"></script>
+<script src="js/WS/getVersionList.js"></script>
 
         <!-- <button hidden id="allcard" class="btn btn-default filter-button" data-filter="all">Voir toutes les cartes</button> -->
     </div>

@@ -46,9 +46,9 @@ $(document).ready(function() {
 
     // DISABLED WELCOME P //
 
-        //    $("#gobutton").click(function () {
-        //        $("p#welcome").hide("slow");
-        //});
+           $("#gobutton").click(function () {
+               $("p#welcome").hide("slow");
+        });
 
     // FLIPPING CARD //
 
