@@ -29,11 +29,13 @@ $(document).ready(function() {
                 
                 if ($('#version').val() != "") {
                     $('#gobutton').attr('disabled', false);
-                    $('#mycreate').attr('disabled', false);
+                    $('#myadd').attr('disabled', false);
                     $('#mydelete').attr('disabled', false);
                 }
                 else {
                     $('#gobutton').attr('disabled', true);
+                    $('#myadd').attr('disabled', true);
+                    $('#mydelete').attr('disabled', true);
                 }
             }
             else {
@@ -44,9 +46,9 @@ $(document).ready(function() {
 
     // DISABLED WELCOME P //
 
-            $("#gobutton").click(function () {
-                $("p#welcome").hide("slow");
-        });
+        //    $("#gobutton").click(function () {
+        //        $("p#welcome").hide("slow");
+        //});
 
     // FLIPPING CARD //
 
